@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hide{
+    display: none;;
+}
+
+.gameArea{
+    width:400px;
+    height: 100vh;
+    background-color: #3d3d3d;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    border-right: 7px dotted white;
+    border-left: 7px dotted white;
+    
+}
+
+.lines{
+    width: 10px;
+    height: 100px;
+    background-color: whitesmoke;
+    position: absolute;
+    margin-left: 50%;
+}
+ .car{
+    width: 40px;
+    height: 70px;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 2px;
+    position: absolute;
+    bottom: 120px;
+    background-image: url('car1.png');
+    /* background-size: 100% 120%; */
+    background-size: cover ;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 25%;
+    
+    
+}
+
+
+.enemy{
+    width: 50px;
+    height: 80px;
+    background-color: rgba(0,0,0,0.2);
+    position: absolute;
+    bottom: 120px;
+    margin: 10px;
+    /* background-size: 100% 120%; */
+    background-size: cover ;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 25%;
+}
+.score{
+    position: absolute;
+    top:15px;
+    left:40px;
+    background-color: green;
+    width: 300px;
+   line-height:  70px;
+    color: white;
+    font-size: 1.5em;
+    font-family: fantasy;
+    box-shadow: 0 5px 5px #777;
+    text-align: center;
+ 
+}
+
+.startScreen{
+    position: absolute;
+    background-color: #ee5253;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    z-index: 1;
+    text-align: center;
+    border: 1px solid #ff6b6b;
+    padding: 15px;
+    margin: auto;
+    width: 50%;
+    cursor: pointer;
+    font-family: carfront ;
+    letter-spacing: 5;
+    font-size: 20px;
+    word-spacing: 3;
+    line-height: 30px;
+    text-transform: uppercase;
+    box-shadow: 0 5px 5px #777;
+}
+
+.carGame{
+    width: 100%;
+    height: 100%;
+    background:url('forest.png') ;
+    background-size: 100% 100%;
+    background-repeat: no-repeat; 
+}
